@@ -45,7 +45,7 @@ for number in 19...51 where number % 2 != 0 {
 ## Question 5
 
 Write code that prints all the numbers that end in a **5** from 1 to 100, **exclusive.**
-for number in 1...100 where number % 10 == 5 {
+for number in 1..<100 where number % 10 == 5 {
 print(number)
 
 ***
@@ -63,12 +63,22 @@ Given a range of numbers from 20 to 150 inclusive, print out all the numbers tha
 
 `Numbers that are divisible by 3`
 
+for num in 20...150 where num % 3 == 0 {
+    print(num)
+}
+
 ***
 ## Question 8
 
 Given a range of numbers from 20 to 150 inclusive, print out all the numbers that follows these conditions:
 
 `Numbers that are divisible by 2 and 3`
+
+
+for num in 20...150 where num % 3 == 0 && num % 2 == 0 {
+    print(num)
+}
+
 
 ***
 ## Question 9
@@ -80,6 +90,7 @@ Given a range of numbers from 20 to 150 inclusive, print out all the numbers tha
 for number in 20...150 where number % 10 == 4 {
 print(number)
 }
+
 ***
 ## Question 10
 
@@ -124,12 +135,15 @@ while (i > 3) {
 
 
 
-var i = 9
+var i = 5
 
-while (i < 3) {
+while (i > 3) {
     i += 1
-
+    if i == 9 {
+        break
+    }
 }
+
 ```
 
 ***
@@ -140,10 +154,16 @@ Change the code below to make the loop stop executing after it has run 1,000 tim
 ```swift
 var i = 5
 
-while (i > 3) {
+while (i < 1000) {
     i += 1
 }
 ```
+var i = 5
+
+while (i > 3) {
+    i += 1
+}
+
 
 ***
 ## Question 14
@@ -178,6 +198,8 @@ repeat {
     print("i = \(i)")
     i += 1
 } while i <= 10
+
+The following two loops will perform the same output. 
 ```
 
 # Bonus =)
