@@ -13,60 +13,65 @@
 ## Question 1
 
 Write code that prints all the numbers from 1 to 150, **inclusive.**
-
+```
 for num in 1...150 {
 print(num)
+```
 ***
 ## Question 2
 
 Write code that prints all the numbers from 142 to 159, **exclusive.**
-
+```
 for num in 142..<159 {
     print(num)
 }
+```
 ***
 ## Question 3
 
 Write code that prints only the even numbers from 15 to 80, **inclusive.**
-
+```
 for number in 15...80 where number % 2 == 0 {
     print(number)
 }
-
+```
 ***
 ## Question 4
 
 Write code that prints only the odd numbers from 19 to 51, **inclusive.**
-
+```
 for number in 19...51 where number % 2 != 0 {
     print(number)
 }
+```
 ***
 ## Question 5
 
 Write code that prints all the numbers that end in a **5** from 1 to 100, **exclusive.**
+```
 for number in 1..<100 where number % 10 == 5 {
 print(number)
-
+```
 ***
 ## Question 6
 
 Write code that prints all the numbers that end in a 7 from 1 to 40, **inclusive.**
+```
 for number in 1...40 where number % 10 == 7 {
     print(number)
 }
-
+```
 ***
 ## Question 7
 
 Given a range of numbers from 20 to 150 inclusive, print out all the numbers that follows these conditions:
 
 `Numbers that are divisible by 3`
-
+```
 for num in 20...150 where num % 3 == 0 {
     print(num)
 }
-
+```
 ***
 ## Question 8
 
@@ -74,11 +79,11 @@ Given a range of numbers from 20 to 150 inclusive, print out all the numbers tha
 
 `Numbers that are divisible by 2 and 3`
 
-
+```
 for num in 20...150 where num % 3 == 0 && num % 2 == 0 {
     print(num)
 }
-
+```
 
 ***
 ## Question 9
@@ -86,25 +91,25 @@ for num in 20...150 where num % 3 == 0 && num % 2 == 0 {
 Given a range of numbers from 20 to 150 inclusive, print out all the numbers that follows these conditions:
 
 `Numbers that end with a 4`
-
+```
 for number in 20...150 where number % 10 == 4 {
 print(number)
 }
-
+```
 ***
 ## Question 10
 
 Given a range of numbers from 20 to 150, print out all the numbers that follows these conditions:
 
 `Print out numbers: 31, 35, 40 to 60.`
-
+```
 for number in 2...150 {
 
 if number == 31 || number == 35 || (number > 39 && number <= 60) {
 
    print(number) }
 }
-
+```
 ***
 ## Question 11
 
@@ -158,12 +163,13 @@ while (i < 1000) {
     i += 1
 }
 ```
+```
 var i = 5
 
 while (i > 3) {
     i += 1
 }
-
+```
 
 ***
 ## Question 14
@@ -176,6 +182,10 @@ var i = 5
 while (i > 3) {
     i += 1
 }
+```
+```
+
+
 ```
 
 ***
@@ -201,6 +211,10 @@ repeat {
 
 The following two loops will perform the same output. 
 ```
+```
+
+
+```
 
 # Bonus =)
 
@@ -208,7 +222,9 @@ The following two loops will perform the same output.
 ## Question 1
 
 What's the difference between `break` and `continue`?  Give an example that demonstrates their differences.
+```
 
+```
 ***
 ## Question 2
 
@@ -274,16 +290,30 @@ outerloop: for x in 1...3 {
     }
 }
 ```
+```
+
+
+
+```
 
 ***
 ## Question 5
 
 Write code that prints out all the points in the area bounded by (0,0), (10,0), (0,10) and (10,10) **where** x and y are both integers.
+```
+
+
+```
 
 ***
 ## Question 6
 
 Write code that prints out all the points in the area bounded by (0,0), (10,0), (0,10) and (10,10) **where** the difference of x and y is at least 5, and x and y are both integers.
+```
+
+
+
+```
 
 ***
 ## Question 7
@@ -311,19 +341,18 @@ Example 1:
 Input: `var N = 2`
 
 Output:
-```swift
-**
-**
+```
+
+
 ```
 
 Example 2:
 Input: `var N = 3`
 
 Output:
-```swift
-***
-***
-***
+```
+
+
 ```
 
 Hint 1
