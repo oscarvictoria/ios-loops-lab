@@ -123,7 +123,7 @@ while (i > 3) {
 }
 
 // Your explanation here 
-The loop will run indefenatly 
+The loop will run indefenatly, because it is set to true. 
 ```
 
 ***
@@ -164,11 +164,13 @@ while (i < 1000) {
 }
 ```
 ```
-var i = 5
-
-while (i > 3) {
+while (i < 1000) {
     i += 1
+    if i == 1000 {
+        break
+    }
 }
+
 ```
 
 ***
@@ -184,7 +186,16 @@ while (i > 3) {
 }
 ```
 ```
-
+if i % 2 == 0 {
+    print("the current value of w is \(w)")
+}
+while (i > 3) {
+i += 1
+    if i == 1000  {
+        break
+    }
+    
+}
 
 ```
 
@@ -212,6 +223,7 @@ repeat {
 The following two loops will perform the same output. 
 ```
 ```
+Both of their outputs will be the same because they are both less then 10 which makes their condition true. 
 
 
 ```
